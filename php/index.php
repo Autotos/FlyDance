@@ -1,3 +1,3 @@
 <?php
-    require_once('base/datatype.php');
+    # require_once('base/datatype.php');
 ?>
