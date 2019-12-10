@@ -70,10 +70,29 @@ $class2->action();
 
 class MyClass
 {
+    private $name = 1;
+
+    public function action1()
+    {
+        return $this->action2();
+    }
+
+    private function action2()
+    {
+        if (1 == $this->name) {
+            return "resule is 1";
+        } else {
+            return "resule is none";
+        }
+    }
+
     function weather($str)
     {
         return "The weather now is ".$str;
     }
 }
+
+$class = new MyClass();
+echo $class->action1();
 
 ?>
